@@ -16,7 +16,7 @@ import debounce from "lodash.debounce";
 
 const ListVehicle = () => {
      const [date, setDate] = useState<string>('');
-    const [vehicle, setUser] = useState<UserType|null>(null);
+    const [vehicle, setUser] = useState<VehicleType|null>(null);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [search, setSearch] = useState<string>('');
     const [searchInput, setSearchInput] = useState<string>('');
@@ -70,11 +70,11 @@ const ListVehicle = () => {
                                             </tr>
                                         </thead>
                                         <tbody className="relative">
-                                            {getData ? getData?.items?.map((item: UserType, index: number)=>(
+                                            {getData ? getData?.items?.map((item: VehicleType, index: number)=>(
                                                 <tr key={index} className="border-b border-[#E6EAF0] themeTextMuted">
                                                 <td className="flex px-4 py-3 space-x-2 capitalize cursor-pointer text-secondary hover:underline uppercase">
                                                     <Link to={`/vehicles/${item.uuid}/show`} className="flex items-center space-x-2">
-                                                        <span>{item.plate_number} {item.last_name}</span>
+                                                        <span>{item.plate_number}</span>
                                                         <CornerRightUp size={18} />
                                                     </Link>
                                                     </td>

@@ -60,7 +60,7 @@ const ListVehicleType = () => {
                                             </tr>
                                         </thead>
                                         <tbody className="relative">
-                                            {getData ? getData?.items?.map((item: UserType, index: number)=>(
+                                            {getData ? getData?.items?.map((item: VehicleModelType, index: number)=>(
                                                 <tr key={index} className="border-b border-[#E6EAF0] themeTextMuted">
                                                 <td className="flex px-4 py-3 space-x-2 capitalize cursor-pointer text-secondary hover:underline">
                                                     <Link to={`/vehicle/type/${item.uuid}/show`} className="flex items-center space-x-2">
