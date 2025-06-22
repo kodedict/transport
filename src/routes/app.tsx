@@ -4,7 +4,7 @@ import RouteType from "@/types/route-type";
 import NotFound from "./not-found";
 import Dashboard from "@/pages/auth/dashboard";
 import Login from "@/pages/guest/login";
-import Register from "@/pages/guest/register";
+// import Register from "@/pages/guest/register";
 import ForgotPassword from "@/pages/guest/forgot-password";
 import ResetPassword from "@/pages/guest/reset-password";
 import { AuthUser } from "@/store/auth";
@@ -34,8 +34,8 @@ const Auth = AuthUser();
 
 const guest_routes: RouteType[] = [
     {path: '/login', element: <Login/>},
-    {path: '/register', element: <Register/>},
-    {path: '/realtor/register', element: <Register registerAs="realtor"/>},
+    // {path: '/register', element: <Register/>},
+    // {path: '/realtor/register', element: <Register registerAs="realtor"/>},
     {path: '/forgot-password', element: <ForgotPassword/>},
     {path: '/reset-password', element: <ResetPassword/>},
     {path: '/set-password', element: <SetPassword/>},

@@ -79,7 +79,7 @@ const VehicleForm = ({
         const handler = debounce(async () => {
             const response = await ReturnGet(`admin/vehicle-type?search=${searchVehicle}`)
             if (!response) return;
-            setVehicles(response.items.map((item: UserType) => ({ value: item.uuid, name: `${item.model}` })));
+            setVehicles(response.items.map((item: VehicleModelType) => ({ value: item.uuid, name: `${item.model}` })));
         }, 500)
 
         handler()
