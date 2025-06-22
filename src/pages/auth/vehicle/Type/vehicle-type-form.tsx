@@ -14,7 +14,7 @@ const VehicleTypeForm = ({
     vehicleType,
 } : {
     isEdit?: boolean,
-    vehicleType?: UserType | any,
+    vehicleType?: VehicleModelType,
 }) => {
         //handle form submission
         const formSchema = yup.object({
