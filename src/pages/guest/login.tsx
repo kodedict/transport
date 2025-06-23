@@ -79,9 +79,9 @@ const Login = () => {
                     type="submit"
                     className="w-full"
                 />
-                <div className="text-center">
+                {/* <div className="text-center">
                     <Link to={'/register'} className="hover:underline themeTextMuted hover:text-primary">Don't have an account?</Link>
-                </div>
+                </div> */}
             </form>
         </div>
         </GuestLayout>
